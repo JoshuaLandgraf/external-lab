@@ -21,6 +21,6 @@ object CalcParseSpec extends Properties("Parser") with CalcSugar {
     
     property("addition") = forAll { (n1: Int, n2: Int) ⇒
       s"$n1 + $n2" ~> (n1 |+| n2)   
-    } 
+    }
     
 }
